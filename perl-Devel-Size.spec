@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Devel
 %define	pnam	Size
-Summary:	Devel::Size - Perl extension for finding the memory usage of Perl variables
-Summary(pl):	Devel::Size - rozszerzenie Perla do okre¶lania zu¿ycia pamiêci przez zmienne
+Summary:	Devel::Size - finding the memory usage of Perl variables
+Summary(pl):	Devel::Size - okre¶lanie zu¿ycia pamiêci przez zmienne Perla
 Name:		perl-Devel-Size
 Version:	0.58
 Release:	1
