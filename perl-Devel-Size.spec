@@ -31,14 +31,15 @@ when calling.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
-%{__make}
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:make test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+make install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
