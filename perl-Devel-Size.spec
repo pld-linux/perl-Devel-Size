@@ -3,8 +3,8 @@
 %bcond_without	tests	# do perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Devel
-%define	pnam	Size
+%define		pdir	Devel
+%define		pnam	Size
 Summary:	Devel::Size - finding the memory usage of Perl variables
 Summary(pl):	Devel::Size - okre¶lanie zu¿ycia pamiêci przez zmienne Perla
 Name:		perl-Devel-Size
