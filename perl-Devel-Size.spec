@@ -29,7 +29,7 @@ when calling.
 Ten modu³ oblicza prawdziwe rozmiary zmiennych perlowych w bajtach.
 Wystarczy wywo³aæ funkcjê z referencj± do zmiennej, której rozmiar
 chce siê poznaæ. Je¶li zmienna jest skalarem, zwraca rozmiar skalara.
-Jesli zmienna jest haszem lub tablic±, nale¿y u¿yæ referencji przy
+Je¶li zmienna jest haszem lub tablic±, nale¿y u¿yæ referencji przy
 wywo³aniu.
 
 %prep
