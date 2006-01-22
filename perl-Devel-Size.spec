@@ -8,12 +8,13 @@
 Summary:	Devel::Size - finding the memory usage of Perl variables
 Summary(pl):	Devel::Size - okre¶lanie zu¿ycia pamiêci przez zmienne Perla
 Name:		perl-Devel-Size
-Version:	0.59
-Release:	1
-License:	unknown
+Version:	0.64
+Release:	0.1
+# same as perl itself (as stated in COPYRIGHT section of pod)
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1d33000a8990c66e10999c1d044fd731
+# Source0-md5:	d200be2102275c77e2e3bb18ac6914b4
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
