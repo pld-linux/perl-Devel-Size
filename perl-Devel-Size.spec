@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	Size
 Summary:	Devel::Size - finding the memory usage of Perl variables
-Summary(pl):	Devel::Size - okre¶lanie zu¿ycia pamiêci przez zmienne Perla
+Summary(pl.UTF-8):   Devel::Size - okreÅ›lanie zuÅ¼ycia pamiÄ™ci przez zmienne Perla
 Name:		perl-Devel-Size
 Version:	0.64
 Release:	0.1
@@ -26,12 +26,12 @@ of.  If the variable is a plain scalar it returns the size of
 the scalar.  If the variable is a hash or an array, use a reference
 when calling.
 
-%description -l pl
-Ten modu³ oblicza prawdziwe rozmiary zmiennych perlowych w bajtach.
-Wystarczy wywo³aæ funkcjê z referencj± do zmiennej, której rozmiar
-chce siê poznaæ. Je¶li zmienna jest skalarem, zwraca rozmiar skalara.
-Je¶li zmienna jest haszem lub tablic±, nale¿y u¿yæ referencji przy
-wywo³aniu.
+%description -l pl.UTF-8
+Ten moduÅ‚ oblicza prawdziwe rozmiary zmiennych perlowych w bajtach.
+Wystarczy wywoÅ‚aÄ‡ funkcjÄ™ z referencjÄ… do zmiennej, ktÃ³rej rozmiar
+chce siÄ™ poznaÄ‡. JeÅ›li zmienna jest skalarem, zwraca rozmiar skalara.
+JeÅ›li zmienna jest haszem lub tablicÄ…, naleÅ¼y uÅ¼yÄ‡ referencji przy
+wywoÅ‚aniu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
