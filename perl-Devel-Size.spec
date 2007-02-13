@@ -6,7 +6,7 @@
 %define		pdir	Devel
 %define		pnam	Size
 Summary:	Devel::Size - finding the memory usage of Perl variables
-Summary(pl.UTF-8):   Devel::Size - określanie zużycia pamięci przez zmienne Perla
+Summary(pl.UTF-8):	Devel::Size - określanie zużycia pamięci przez zmienne Perla
 Name:		perl-Devel-Size
 Version:	0.64
 Release:	0.1
