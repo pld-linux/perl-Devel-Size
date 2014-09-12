@@ -60,6 +60,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc CHANGES
 %{perl_vendorarch}/Devel/Size.pm
 %dir %{perl_vendorarch}/auto/Devel/Size
-%{perl_vendorarch}/auto/Devel/Size/Size.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Devel/Size/Size.so
 %{_mandir}/man3/*
