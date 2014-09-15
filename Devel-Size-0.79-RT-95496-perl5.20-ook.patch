@@ -1,0 +1,30 @@
+Description: mark a test as TODO
+ ntyni: "I've filed [perl #122322] about OOK (Offset OK) not triggering
+ anymore in such cases; it changed with the enabling of COW (Copy on Write)
+ for 5.19.1.
+ .
+ The problem isn't about Devel-Size counting the size of an SV wrong when
+ OOK is used, but rather the fact that OOK doesn't get used anymore.
+ .
+ (See the 'Offsets' section in perlguts for information about OOK.)"
+Origin: vendor
+Bug: https://rt.cpan.org/Public/Bug/Display.html?id=95493
+Bug-Debian: http://bugs.debian.org/750235
+Forwarded: no, this is a temporary workaround
+Author: gregor herrmann <gregoa@debian.org>
+Last-Update: 2014-07-18
+
+--- a/t/basic.t
++++ b/t/basic.t
+@@ -119,8 +119,11 @@
+     my $before_length = length $uurk;
+     cmp_ok($before_size, '>', $before_length, 'Size before is sane');
+     $uurk =~ s/Perl //;
++TODO: {
++    local $TODO = '[perl #122322]: OOK (Offset OK) not triggering anymore';
+     is(total_size($uurk), $before_size,
+        "Size doesn't change because OOK is used");
++    }
+     cmp_ok(length $uurk, '<', $before_size, 'but string is shorter');
+ }
+ 
