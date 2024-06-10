@@ -1,20 +1,20 @@
 #
 # Conditional build:
-%bcond_without	tests	# do perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Devel
 %define		pnam	Size
 Summary:	Devel::Size - finding the memory usage of Perl variables
 Summary(pl.UTF-8):	Devel::Size - określanie zużycia pamięci przez zmienne Perla
 Name:		perl-Devel-Size
-Version:	0.83
-Release:	4
+Version:	0.84
+Release:	1
 # same as perl itself (as stated in COPYRIGHT section of pod)
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Devel/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0b5335d69402c75d5ab9978027ae2f66
-URL:		https://metacpan.org/release/Devel-Size
+Source0:	https://www.cpan.org/modules/by-module/Devel/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	4978c07f54a730b16a705e074d7685e3
+URL:		https://metacpan.org/dist/Devel-Size
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
